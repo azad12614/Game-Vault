@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+
+body {
+  background-color: #0f3535;
+}
+
+nav {
+  display: flex;
+  background-color: #020707;
+  width: 100%;
+  height: 6rem;
+}
+
+nav a {
+  display: flex;
+  height: 6rem;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+}
+
+nav #arrow {
+  background-color: gold;
+  height: 3.5rem;
+  aspect-ratio: 1/1;
+  padding: 0.15rem;
+  border-radius: 50%;
+}
+
+nav #tittle {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6rem;
+}
+
+nav h1 {
+  font-size: 3rem;
+  color: gold;
+}
+
+#info {
+  text-align: center;
+  margin-block: 2rem;
+}
+
+#info #game {
+  width: 30rem;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: gold;
+  border-bottom: 2px solid gold;
+}
+
+#info #move {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: aliceblue;
+}
+
+#info #limit {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: red;
+}
+
+.tiles {
+  margin: 3rem auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 7rem);
+  gap: 15px;
+}
+
+.tile {
+  height: 7rem;
+  aspect-ratio: 1/1;
+  background: #020707;
+  border: 0.3rem solid #383800;
+  cursor: pointer;
+}
