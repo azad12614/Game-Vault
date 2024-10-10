@@ -19,6 +19,12 @@ let activeTile = null;
 let awaitingEndOfMove = false;
 let moveCount = 0;
 
+const reloadButton = document.getElementById("reload-button");
+
+reloadButton.addEventListener("click", () => {
+    window.location.reload();
+});
+
 function buildTile(color) {
     const element = document.createElement("div");
 
@@ -36,7 +42,6 @@ function buildTile(color) {
         }
         else if (moveCount > 32) {
             alert("You are out of move! Refresh to start again.");
-            return;
         }
         else if (revealedCount < tileCount) {
             moveContainer.textContent = moveCount;
